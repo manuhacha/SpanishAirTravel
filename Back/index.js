@@ -14,6 +14,8 @@ const port = 3000;
 app.listen(port, () => {
     console.log('Listening on port: ' + port)
 })
+
+
 //Nos conectamos a nuestra BBDD MongoDB
 mongoose.connect('mongodb://localhost/SpanishAirTravel', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB'),)
