@@ -77,7 +77,7 @@ export class HomeComponent {
         <b>ICAO: </b> ${plane.icao} <br>
         <b>Longitud: </b> ${plane.longitude} <br>
         <b>Latitud: </b> ${plane.latitude} <br>
-        <b>Altitud: </b> ${plane.longitude}m <br>
+        <b>Altitud: </b> ${plane.altitude}m <br>
         <b>En tierra: </b> ${plane.onGround} <br>
         <b>Velocidad: </b> ${plane.velocity} m/s
         `)
