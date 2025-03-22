@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { OpenSkyService } from '../../Services/open-sky.service';
 import { HttpClient } from '@angular/common/http';
 import * as L from 'leaflet';
-import { Plane } from '../../Models/Plane';
+
 
 @Component({
   selector: 'app-home',
@@ -26,7 +26,6 @@ export class HomeComponent {
   marker!: L.Marker;
   //Inicializamos array de aviones
   planes: any[] = [];
-
 
   constructor(private service: OpenSkyService, private http: HttpClient) {  }
   
@@ -54,7 +53,7 @@ export class HomeComponent {
         console.log(this.planes.length)
       },
       error: (err) => {
-        console.log(err)
+        console.log(err.error)
       }
     })
   }
