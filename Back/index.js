@@ -5,7 +5,6 @@ const app = express();
 const planes = require('./routes/planes');
 app.use(cors());
 app.use(express.json());
-require('dotenv').config();
 
 //Definimos nuestro endpoint planes
 app.use('/api/v1/planes/',planes);

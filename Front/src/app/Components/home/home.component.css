@@ -1,12 +1,7 @@
-.map {
-    height: 100vh; /* Puedes aumentar si es necesario */
-    width: 100%;
-}
 /* Quitar borde y fondo del icono SVG */
 .mapicon {
-    border: none !important;      /* Eliminar borde */
-    background: transparent !important; /* Eliminar fondo */
-    box-shadow: none !important;   /* Eliminar sombra, si existe */
-    padding: 0;                    /* Quitar cualquier relleno */
-  }
-  
+  border: none !important; /* Eliminar borde */
+  background: transparent !important; /* Eliminar fondo */
+  box-shadow: none !important; /* Eliminar sombra, si existe */
+  padding: 0; /* Quitar cualquier relleno */
+}
